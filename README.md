@@ -20,6 +20,8 @@ loaders: [
   :
 ```
 
-## TODO
-1. Process loader queries (Riot compiler `--type` and `--compact` options).
-2. More usage examples.
+Use query parameters to include Riot compiler command options. Examples:
+
+    { test: /\.tag$/, loader: 'tag?type=es6&compact' },
+    { test: /\.tag$/, loader: 'tag', query: {type: 'es6'} },
+
