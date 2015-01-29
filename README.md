@@ -9,8 +9,17 @@
 ## Usage examples
 
 #### webpack.config.js
-
 ```
-TODO
+  :
+module: {
+loaders: [
+  { test: /\.tag$/, loader: 'tag' },
+    :
+]
+}
+  :
 ```
 
+## TODO
+1. Process loader queries (Riot compiler `--type` and `--compact` options).
+2. More usage examples.
