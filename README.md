@@ -1,6 +1,6 @@
 # Riot tag file loader for Webpack
 
-[Webpack](http://webpack.github.io/) can use this loader to automatically compile [Riot](https://muut.com/riotjs/) tag files.
+[Webpack](http://webpack.github.io/) can use this loader to automatically compile [Riot](https://muut.com/riotjs/) tag files. Inspired by [this GitHub Gist](https://gist.github.com/guyromm/77d044c1fc75b117c99b).
 
 
 ## Install
