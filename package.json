@@ -4,7 +4,7 @@
   "description": "Riot tag file loader for Webpack",
   "author": "Stuart Rackham",
   "license": "MIT",
-  "main": "tag-loader.js",
+  "main": "index.js",
   "keywords": [
     "webpack",
     "loader",
