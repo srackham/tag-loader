@@ -1,6 +1,6 @@
 {
   "name": "tag-loader",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Riot tag file loader for Webpack",
   "author": "Stuart Rackham",
   "license": "MIT",
