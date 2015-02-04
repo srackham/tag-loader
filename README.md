@@ -8,9 +8,7 @@
     npm install tag-loader --save-dev
 
 
-## Usage examples
-
-#### webpack.config.js
+#### webpack.config.js Configuration
 ```
   :
 module: {
@@ -24,7 +22,21 @@ loaders: [
 
 Use query parameters to include Riot compiler command options. Examples:
 
-    { test: /\.tag$/, loader: 'tag?type=es6&compact' },
-    { test: /\.tag$/, loader: 'tag', query: {type: 'es6'} },
+    { test: /\.tag$/, loader: 'tag?compact' },
+    { test: /\.tag$/, loader: 'tag', query: {compact: 'true'} },
 
 See also the [Webpack loader documentation](http://webpack.github.io/docs/using-loaders.html).
+
+
+## ES5 projects
+Once you've installed and configured the `tag-loader` you can require Riot tag files into your project using the `require()` function e.g.
+
+    require('./tags.tag');
+
+
+## ES6 projects
+Once you've installed and configured the `tag-loader` and [6to5-loader](https://www.npmjs.com/package/6to5-loader) you can import Riot tag files into your project using the ES6 module `import` statement e.g.
+
+    import './tags.tag'
+
+**NOTE**: I do not recommend using ES6 code inside Riot tag files, [here's why](https://muut.com/riotjs/forum/#!/using:problem-referencing-this-in).
